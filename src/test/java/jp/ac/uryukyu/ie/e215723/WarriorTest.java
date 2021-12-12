@@ -15,10 +15,10 @@ public class WarriorTest {
         Enemy slime3 = new Enemy("スライムもどき3", enemyHP, 100);
         
         demoWarrior.attackWithWeponSkill(slime1);
-        assertEquals(slime1.isDead(), true);
+        assertEquals(slime1.getHitPoint(), 0);
         demoWarrior.attackWithWeponSkill(slime2);
-        assertEquals(slime2.isDead(), true);
+        assertEquals(slime2.getHitPoint(), 0);
         demoWarrior.attackWithWeponSkill(slime3);
-        assertEquals(slime3.isDead(), true);
+        assertEquals(slime3.getHitPoint(), 0);
     }
 }
